@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.WholeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.login{
+    background-image: url("./Image/login.jpg");
+    filter: brightness(70%);
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+}
+.FormContainer{
+    width:30%;
+    min-height: 400px;
+    background: linear-gradient(to right top,white, rgb(127, 78, 91));
+    padding: 50px;
+    border-radius: 20px;
+}
+form h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+label{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+input{
+    padding: 10px;
+    color: blueviolet;
+    font-size: 15px;
+}
+input::placeholder{
+    color: gray;
+    font-weight: bold;
+}
+.Box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+i{
+    position: absolute;
+    background-color: white;
+    border:5px solid white;
+    bottom:10%;
+    right:3%;
+    /* z-index: 30; */
+}
+.button{
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*   Responsive Code      */
+/*Tablet View  */
+@media only screen and (min-width:900px) and (max-width:1100px){
+    .FormContainer{
+        width:55%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:900px){
+    .FormContainer{
+        width:75%;
+    }
+}
+/*Mobile View  */
+@media only screen and (min-width:400px) and (max-width:600px){
+    .FormContainer{
+        width:85%;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:400px){
+    .FormContainer{
+        width:95%;
+    }
+}

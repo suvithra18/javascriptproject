@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vegetable Project</title>
+    <!------------Responsive Link------------>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!---------Bootstrap Css Link-------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!----------Index css Link Connect ----->
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <!------- Fontawesome Link----------->
+    <script src="https://kit.fontawesome.com/8d1580c953.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <!-------- Nav Bar Starting      ------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./Image/veg logo 5.png" alt="" width="35" height="30" class="d-inline-block align-text-top">
+                <b class="fs-3">Organic Product</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0 ms-auto p-2 fs-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-------- Nav Bar Ending     ------------->
+    <div class="login">
+        <div class="WholeContainer">
+        <div class="FormContainer">
+            <form>
+                <h1 class="text-center">Login</h1>
+                <div class="Box">
+                    <label>UserName</label>
+                    <input type="text" placeholder="Enter your name..." required  id="username"/>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="Box">
+                    <label>Password</label>
+                    <input type="text" placeholder="Enter your password..." required  id="password"/>
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <!-- <div class="Box1 d-flex align-items-center justify-content-center">
+                    <input type="submit" class="bg-primary w-50 border border-none text-white p-2"
+                    id="submit" onclick="validate()">Login</input> -->
+                    <input type="button" class="button" value="Login" id="submit" onclick="validate()"/>
+                </div>
+            </form>
+        </div> 
+        </div>
+    </div> 
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
